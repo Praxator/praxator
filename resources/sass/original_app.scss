@@ -1,0 +1,68 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  color: $text-color;
+  background-color: $grey;
+  h1 {
+    color: $darkbrown;
+    font-weight: bolder;
+  }
+  a {
+    color: $lightbrown;
+  }
+}
+
+.container-fluid {
+  margin-top: 45px;
+}
+
+.account-nav {
+  float: right;
+  position: fixed;
+  right: 0;
+  top: 0;
+  text-align: center;
+  z-index: 1035;
+  padding: 0.5rem 1rem;
+
+  a.dropdown-toggle::after {
+    content:none;
+  }
+}
+
+.desk-navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  height: 45px;
+  background-color: $darkbrown;
+  color: $grey;
+  li a ion-icon {
+    padding-left: 15px;
+    padding-right: 8px;
+  }
+}
+
+footer .navbar {
+  background-color: $white;
+  border-top: 1px solid $grey;
+}
+
+.icon {
+  fill: currentColor;
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+}

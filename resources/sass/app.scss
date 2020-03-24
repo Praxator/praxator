@@ -1,0 +1,124 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito:700');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// ************************************************************
+// Typography
+// ************************************************************
+
+.text-grey {
+  color: $grey1;
+}
+
+// ************************************************************
+// Bootstrap overwriting
+// ************************************************************
+
+.btn-lg {
+  padding: 1rem;
+}
+// ************************************************************
+// Colors
+// ************************************************************
+
+
+// ************************************************************
+// Layout
+// ************************************************************
+body {
+  margin-left: 0px;
+}
+
+header {
+  height: 60px;
+}
+
+main {
+  margin-top:60px;
+}
+
+.fixed-bottom {
+  height: 100px;
+
+}
+.container-fluid {
+  margin-bottom: 120px;
+}
+
+// ************************************************************
+// Site-Sections
+// ************************************************************
+
+// ************************************************************
+// Navigation
+// ************************************************************
+
+
+// ************************************************************
+// Elements
+// ************************************************************
+
+.icon {
+  fill: currentColor;
+  display: inline-block;
+  font-size: inherit;
+  height: 1.5em;
+  overflow: visible;
+  vertical-align: -.125em;
+}
+.icon-media {
+  height: 30px;
+}
+
+.icon-action {
+}
+
+
+
+// ************************************************************
+// Sections
+// ************************************************************
+
+svg {
+  z-index: 100;
+
+  &.ibu-20 {
+    polygon {
+      &.beer-mug-color {
+        fill: #f1dd6f;
+      }
+    }
+  }
+}
+
+
+// ************************************************************
+// Desktop
+// ************************************************************
+
+@media (min-width: 600px) {
+  body {
+    margin-right: 0px;
+    margin-left: 80px;
+  }
+  .fixed-left {
+      bottom: 0;
+      width: 80px;
+      flex-flow: column nowrap;
+      align-items: flex-start;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: auto;
+      z-index: 1030;
+  }
+  .container-fluid {
+    margin-bottom: auto;
+  }
+}
