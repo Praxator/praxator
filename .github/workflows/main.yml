@@ -11,6 +11,6 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action-Typescript@master
       with:
-        ftp-server: ftp://greendoor8.ch:21//home/greendoo/public_html/praxator
+        ftp-server: ftp://greendoor8.ch:21/home/greendoo/public_html/praxator
         ftp-username: ${{ secrets.ftp_username }}
         ftp-password: ${{ secrets.ftp_password }}
