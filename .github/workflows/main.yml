@@ -14,3 +14,4 @@ jobs:
         ftp-server: ftp://ftp.greendoor8.ch:21//home/greendoo/public_html/praxator
         ftp-username: ${{ secrets.ftp_username }}
         ftp-password: ${{ secrets.ftp_password }}
+        git-ftp-args: --dry-run
