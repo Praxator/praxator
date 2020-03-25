@@ -23,3 +23,6 @@ Homestead.json
 /.idea
 /.vscode
 .phpunit.result.cache
+
+package-lock.json
+composer.lock
