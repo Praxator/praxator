@@ -1,124 +1,32 @@
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito:700');
+@import "fonts";
 
 // Variables
-@import 'variables';
+@import "variables";
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-// ************************************************************
-// Typography
-// ************************************************************
+@import "layout";
 
-.text-grey {
-  color: $grey1;
-}
+@import "utilities";
 
-// ************************************************************
-// Bootstrap overwriting
-// ************************************************************
+@import "typography";
 
-.btn-lg {
-  padding: 1rem;
-}
-// ************************************************************
-// Colors
-// ************************************************************
+@import "images";
 
+@import "tables";
 
-// ************************************************************
-// Layout
-// ************************************************************
-body {
-  margin-left: 0px;
-}
+@import "buttons";
 
-header {
-  height: 60px;
-}
+@import "elements";
 
-main {
-  margin-top:60px;
-}
+@import "cards";
 
-.fixed-bottom {
-  height: 100px;
+@import "forms";
 
-}
-.container-fluid {
-  margin-bottom: 120px;
-}
-
-// ************************************************************
-// Site-Sections
-// ************************************************************
-
-// ************************************************************
-// Navigation
-// ************************************************************
+@import "navbar";
 
 
-// ************************************************************
-// Elements
-// ************************************************************
-
-.icon {
-  fill: currentColor;
-  display: inline-block;
-  font-size: inherit;
-  height: 1.5em;
-  overflow: visible;
-  vertical-align: -.125em;
-}
-.icon-media {
-  height: 30px;
-}
-
-.icon-action {
-}
-
-
-
-// ************************************************************
-// Sections
-// ************************************************************
-
-svg {
-  z-index: 100;
-
-  &.ibu-20 {
-    polygon {
-      &.beer-mug-color {
-        fill: #f1dd6f;
-      }
-    }
-  }
-}
-
-
-// ************************************************************
-// Desktop
-// ************************************************************
-
-@media (min-width: 600px) {
-  body {
-    margin-right: 0px;
-    margin-left: 80px;
-  }
-  .fixed-left {
-      bottom: 0;
-      width: 80px;
-      flex-flow: column nowrap;
-      align-items: flex-start;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: auto;
-      z-index: 1030;
-  }
-  .container-fluid {
-    margin-bottom: auto;
-  }
-}
+@import "topics/recipes";

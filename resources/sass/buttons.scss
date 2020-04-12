@@ -1,0 +1,11 @@
+.btn-lg {
+  padding: 1rem;
+}
+
+.no-caret.dropdown-toggle {
+  text-decoration: none !important;
+}
+
+.no-caret.dropdown-toggle::after {
+  display:none;
+}

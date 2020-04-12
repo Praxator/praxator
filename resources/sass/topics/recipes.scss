@@ -1,0 +1,11 @@
+svg {
+  z-index: 100;
+
+  &.ibu-20 {
+    polygon {
+      &.beer-mug-color {
+        fill: #f1dd6f;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+// ************************************************************
+// Layout
+// ************************************************************
+
+body, html {
+    min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  background-color: rgb(245,248,250);
+}
+
+#content {
+  margin-bottom: auto !important;
+}
