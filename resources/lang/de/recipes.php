@@ -2,7 +2,6 @@
 return [
     "ibu" => "IBU",
     "list" => [
-        "count_text" => "Rezepte zum Nachbrauen",
         "from" => "von",
         "no_recipes" => "Kein Rezept gefunden",
         "og" => "Stammwürze",

@@ -2,7 +2,6 @@
 return [
     "ibu" => "IBU",
     "list" => [
-        "count_text" => "recipes to use",
         "from" => "from",
         "no_recipes" => "No recipes found",
         "og" => "OG",
@@ -24,7 +23,7 @@ return [
         "label_name" => "Beername",
         "placeholder_name" => "e.g. Citra Single Hop",
         "label_notes" => "Notes",
-        "notes_help_text" => "Write some notes about the recipe.",        
+        "notes_help_text" => "Write some notes about the recipe.",
         "label_origin" => "Source",
         "placeholder_origin" => "e.g. Titel of a book or website",
         "label_original_gravity" => "Original gravity",

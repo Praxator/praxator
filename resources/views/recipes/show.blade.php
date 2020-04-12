@@ -12,6 +12,18 @@
     ]
   )
 
+  <div class="bg-white p-3 border-bottom">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="curser-pointer">
+        <i class="fas fa-chevron-left fa-lg"></i>
+      </div>
+      <div class="font-weight-hold">Rezeptliste</div>
+      <div>
+        <i class="fas fa-ellipsis-v fa-lg text-muted text-decoration-none"></i>
+      </div>
+    </div>
+  </div>
+
   <form action="/recipes" id="recipesList">
   </form>
 
