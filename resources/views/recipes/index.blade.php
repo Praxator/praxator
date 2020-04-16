@@ -1,20 +1,10 @@
 @extends('layouts.mainlayout')
 
   @section('content')
-  <!--  Dies ist die ganze Sektion innerhalb von <main ="content"></main>
-        Sie enthält mehrere verschachtelte div's (je nach Seite).
-        - Im äussersten div wird "nur" festgelegt, wenn die Abstände
-          unten (zum Footer) und oben (zur Navbar) definiert sein sollen.
-          Was machen w-100 und h-100?? Wird das ev. nur gebraucht, wenn die
-          Navbar bei pixelfed nicht angezeigt wird und dafür ein alternativer
-          Nav-Balken mit zurück-Icon erscheint?
-        - Danach kommt ein div-container. Dies ist meistens der erste Container.
-          Er ist zwingend und braucht es immer.
-        - Danach kommen alle Sektions-Div-Blöcke mit den einzelnen Inhalten.
-          Was macht d-flex? d-block?
-  -->
-  <!-- Seiten-Titelbereich -->
+
   <div>
+
+    <!-- page title -->
     <div class="container">
 
       <div class="d-flex align-item-center pt-3">
@@ -25,6 +15,7 @@
         </div>
       </div>
 
+      <!-- recipes stats -->
       <div class="pt-3 border-bottom">
         <div class="container px-0">
             <div class="row">
@@ -70,29 +61,39 @@
         </div>
       </div>
 
-      <div class="filter-list">
-        <ul class="nav nav-topbar d-flex justify-content-center">
-          <li class="nav-item px-0">
-            <a href="#" class="nav-link">
-              <i class="fas fa-th-list text-grey"></i>
-              <span class="d-none small pl1">Alle</span>
-            </a>
-          </li>
-          <li class="nav-item px-0 d-sm-none">
-            <a href="#" class="nav-link">
-              <i class="fas fa-filter text-grey"></i>
-              <span class="d-none small pl1">Filter</span>
-            </a>
-          </li>
-        </ul>
+      <!-- helper icons for recipes list -->
+      <div class="row">
+        <div class="col-12 col-md-3 d-sm-block">
+        </div>
+        <div class="col-12 col-md-9">
+          <ul class="nav nav-topbar d-flex justify-content-center">
+            <li class="nav-item px-0">
+              <a href="#" class="nav-link">
+                <i class="fas fa-th-list text-grey"></i>
+                <span class="d-none small pl1">Alle</span>
+              </a>
+            </li>
+            <li class="nav-item px-0 d-sm-none">
+              <button class=" btn btn-link text-grey collapsed" type="button" data-toggle="collapse" data-target="#filter-section" aria-expanded="false" aria-controls="#filter-section" name="button">
+                <i class="fas fa-filter text-grey"></i> <!-- <ion-icon name="funnel-outline"></ion-icon> -->
+                <span class="d-none small pl1">Filter</span>
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div> <!-- alle REzepte -->
-
-        @include('partials.recipes.list')
-
+      <!--list of all recipes -->
+      <div class="row">
+        <div id="filter-section" class="col-12 col-md-3 d-sm-block collapse">
+          Filterbereich
+        </div>
+        <div class="col-12 col-md-9">
+            @include('partials.recipes.list')
+        </div>
       </div>
     </div>
+    
   </div>
 
 @endsection

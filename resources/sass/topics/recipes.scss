@@ -1,10 +1,10 @@
 svg {
   z-index: 100;
-
+  width: 30px;
   &.ibu-20 {
-    polygon {
+    polygon, path {
       &.beer-mug-color {
-        fill: #f1dd6f;
+        fill: #f1dd6f !important;
       }
     }
   }
